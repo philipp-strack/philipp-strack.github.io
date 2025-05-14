@@ -1,0 +1,54 @@
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+.tabber {
+}
+
+.tabberlive {
+ margin-top:1em;
+}
+
+
+ul.tabbernav
+{
+background: #777;
+margin: 0 0 40px 0;
+padding: 6px 0;
+white-space: nowrap;
+}
+
+
+ul.tabbernav li
+{
+display: inline;
+list-style-type: none;
+padding:  0 0 0 2px;
+border-right: 1px solid white;
+}
+
+
+
+ul.tabbernav li a {
+padding: 4px 10px;
+color: #fff;
+text-decoration: none;
+border-bottom: 0 solid #777;
+}
+
+/*ul.tabbernav li a:link, ul.tabbernav li a:visited
+{
+color: #fff;
+text-decoration: none;
+}*/
+
+ul.tabbernav li a:hover, ul.tabbernav li.tabberactive a:link, ul.tabbernav.tabberactive li a:visited
+{
+/*text-shadow: 0 0 1em #000, 0 0 1em #000, 0 0 1em #000;*/
+}
+
+
+.tabberlive .tabbertab h2  {
+ display:none;
+}
+

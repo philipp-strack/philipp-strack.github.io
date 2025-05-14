@@ -1,0 +1,283 @@
+@import url('../css/tabs.css');
+/*Scrollbar trick*/
+html {
+   min-height: 100%;
+   margin-bottom: 1px;
+}
+
+body {
+   /*background: url(../img/bg.png);*/
+   background: #eee;
+   padding: 0;
+   margin: 0;
+}
+
+div#main {
+   background: #fff none repeat scroll 0% 50%;
+   /*Borders*/
+   /*border-left: 10px solid #bbb;
+   border-right: 10px solid #bbb;*/
+   padding: 30px;
+   width: 840px;
+   min-height: 100%;
+   position: absolute;
+   left: 50%;
+   margin: 0 0 0 -420px;
+   box-shadow: 0px 0px 10px 5px #ccc;
+}
+
+div#head {
+background-image: url(../img/profil3_noborder.jpg);
+background-repeat: no-repeat;
+background-position: top left;
+height: 200px;
+margin: 0 0 30px 0;
+padding: 0;
+padding-left: 161px;
+/*border: 1px solid red;*/
+}
+div#head_shot {
+background-image: url(../img/berkeleylogo_small.jpg);
+background-repeat: no-repeat;
+/*background-position: right top;*/
+background-position: right top;
+height: 50px;
+/*border: 1px solid blue;*/
+/*background-image: url(../img/logo.gif);
+background-repeat: no-repeat;
+background-position: right top;
+height: 71px;*/
+/*height: 200px;*/
+/*margin: 0 0 0 120px;*/
+margin: 0;
+padding: 0;
+}
+div#content {
+padding: 0;
+margin: 0;
+}
+
+dl#publication_list dd {
+margin: 0 0 10px 0;
+}
+dl#publication_list dt {
+color: #333;
+font-weight: bold;
+}
+
+dl#education_list dt {
+padding: 2px 5px;
+height: 37px;
+float: left;
+width: 140px;
+color: #333;
+}
+dl#education_list dd {
+margin-left: 140px;
+/*margin-bottom: 5px;*/
+padding: 2px 5px;
+height: 37px;
+/*border-bottom: 1px solid #ccc;*/
+}
+
+dl#education_list dt, dl#education_list dd{
+   /*border-bottom: 1px solid #eee;
+   background: red;*/
+   margin-bottom: 5px;
+   padding-right: 20px;
+}
+/*alternating colors #eee #f9f9f9*/
+dl#education_list dd { background: #fff; }
+dl#education_list dd:nth-of-type(odd) { background: #fff;}
+dl#education_list dt { background: #fff; text-align: right  }
+dl#education_list dt:nth-of-type(odd) { background: #fff; text-align: right  }
+
+dl#contact_list dd, dl#presentation_list dd {
+margin-left: 140px;
+margin-bottom: 10px;
+}
+dl#contact_list dt, dl#presentation_list dt {
+float: left;
+width: 130px;
+color: #333;
+}
+
+
+dl#contact_list dt {
+width: 60px;
+}
+dl#contact_list dd {
+margin-left: 65px;
+margin-bottom: 3px;
+}
+
+
+body, span, p, li, ul {
+font-size: 14px;
+line-height: 130%;
+font-family: 'Verdana',Arial,Helvetica,sans-serif;
+color: #111;
+}
+#working_list li {
+margin-bottom: 15px;
+/*font-size: 12px;*/
+color: #333;
+}
+
+#working_list a {
+/*text-decoration: underline;*/
+color: #333;
+}
+
+.paper_title {
+font-weight: 800;
+font-size: 14px;
+color: #444;
+font-style:italic;
+font-family: Georgia, Times, "Times New Roman", serif;
+/*
+color: #000;
+font-size:16px;
+letter-spacing: -1px;
+#### This gives larger letters with lower space no bold#####
+*/
+
+margin: 0 0 2px 0;
+}
+
+.journal_title {
+/*letter-spacing: -1px;*/
+font-style: italic;
+font-family: Georgia, Times, "Times New Roman", serif;
+/*font-weight: bold;*/
+/*color: #000;*/
+color: #954F4A;
+margin-bottom: 5px;
+font-size: 14px;
+margin: 0 0 0px 0;
+}
+
+p.intro {
+	line-height: 1.5; color: #111;
+	letter-spacing: 0.03em;
+}
+
+p.authors {
+margin: 0;
+font-size: 13px;
+color: #333;
+}
+
+/*
+.mail_logo {
+background-image: url(email.png);
+background-repeat: no-repeat;
+background-position: left top;
+padding-left: 20px;
+}*/
+
+dl#presentation_list dd {
+margin-left: 130px;
+margin-bottom: 10px;
+}
+dl#presentation_list dt {
+float: left;
+width: 120px;
+color: #333;
+}
+
+#presentation_list dd span.location, #education_list dd span.location {
+/*font-weight: normal;*/
+/*color: #007600;*/
+color: #954F4A;
+}
+
+#presentation_list dd {
+color: #333;
+padding: 2px 5px;
+}
+
+#presentation_list dd { background: #fff; }
+#presentation_list dd:nth-of-type(odd) { background: #eee; }
+
+
+h1 {
+font-weight: normal;
+font-size: 34px;
+/*font-family: 'Josefin Sans Std Light', arial, serif;*/
+margin: 0px 0 20px 0;
+padding: 3px 0 0 0;
+/*color: #376092;*/
+color: #0e284d;
+}
+p.subtitle {
+margin: 0 0 80px 0;
+}
+
+h2 {
+/*font-family: 'Verdana',Arial,Helvetica,sans-serif;*/
+font-family: Century Gothic, sans-serif;
+font-weight: normal;
+font-size: 19px;
+color: #666;
+margin-top: 30px;
+padding-bottom: 5px;
+border-bottom: 1px solid #ccc;
+vertical-align: text-bottom;
+}
+h3 {
+font-size: 16px;
+font-weight: normal;
+font-style: normal;
+margin-top: 20px;
+line-height: 1.5em;
+border-bottom: 1px solid grey;
+color: #0e284d;
+vertical-align: text-bottom;
+/*font-family: Century Gothic, sans-serif;*/
+/*
+font-family: 'Verdana',Arial,Helvetica,sans-serif;
+font-weight: normal;
+font-size: 20px;
+color: #036;
+*/
+}
+
+a, a.discretelink {
+   border-bottom: 1px dotted black;
+   color: black;
+   text-decoration: none;
+}
+
+a:hover, a.discretelink:hover {
+   text-decoration: none;
+}
+
+p.authors a {
+   border-bottom: 0 solid black;
+}
+
+div#cv dl dt {
+	/*text-align: right;*/
+	float: left;
+	width: 150px;
+	margin-bottom:10px;
+}
+div#cv dl dd {
+	margin-left: 170px;
+	margin-bottom:10px;
+}
+p.authors a.paperlink {
+	border-bottom: 1px dotted #666;
+}
+/*
+a {
+text-decoration: none;
+color: #369;
+}
+
+
+a:hover {
+text-decoration: underline;
+}*/
+
