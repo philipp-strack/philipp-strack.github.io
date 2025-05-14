@@ -599,25 +599,124 @@ Unknown, Markovian Demand</p>
 
 
 <dl id="presentation_list">
-<?php
-#
-# reads presentations from the talks.csv file in the same directory
-#
-$row = 1;
-if (($handle = fopen("./talks.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle, 2000, ";")) !== FALSE) {
-        $num = count($data);
-        $row++;
-	#Does this row contain the right number of entries
-	if($num == 4) {	
-		echo "<dt>".$data[0]."</dt><dd><span class=\"location\">".$data[1]."</span><br><i>".$data[2]."</i> presented by ".$data[3]."</dd>";
-	} else {
-		echo "error in row ".$row." containing ".$num." entries</br>";
-	}
-    }
-    fclose($handle);
-}
-?>
+	<dt>May 25 2018</dt><dd><span class="location">ITAM</span><br><i>A Theory of Auctions with Endogenous Valuations</i> presented by Philipp Strack</dd>
+	<dt>May 24 2018</dt><dd><span class="location">CIDE</span><br><i>A Theory of Auctions with Endogenous Valuations</i> presented by Philipp Strack</dd>
+	<dt>April 14 2018</dt><dd><span class="location">Columbia Theory Conference</span><br><i>A Theory of Auctions with Endogenous Valuations</i> presented by Philipp Strack</dd>
+	<dt>April 13 2018</dt><dd><span class="location">Indiana</span><br><i>A Theory of Auctions with Endogenous Valuations</i> presented by Philipp Strack</dd>
+	<dt>April 10 2018</dt><dd><span class="location">Stanford (Mechanism Design Reading Group)</span><br><i>A Theory of Auctions with Endogenous Valuations</i> presented by Philipp Strack</dd>
+	<dt>April 6 2018</dt><dd><span class="location">Columbia Berkeley OR Conference</span><br><i>A Worst Case Analysis for Bandits</i> presented by Philipp Strack</dd>
+	<dt>Mar 1 2018</dt><dd><span class="location">NYU</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Philipp Strack</dd>
+	<dt>Jan 12 2018</dt><dd><span class="location">California Institute of Technology</span><br><i>Turning Up the Heat: The Demoralizing Effect of Competition in Contests</i> presented by Philipp Strack</dd>
+	<dt>Jan 10 2018</dt><dd><span class="location">California Institute of Technology</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Dec 14 2017</dt><dd><span class="location">University of Gothenburg</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Dec 13 2017</dt><dd><span class="location">Norwegian School of Economics Bergen</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Dec 10 2017</dt><dd><span class="location">Minnesota</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Dec 4 2017</dt><dd><span class="location">Rice</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Dec 2 2017</dt><dd><span class="location">ASU Theory conference</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Oct 25 2017</dt><dd><span class="location">Collegio Alberto Turin</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Oct 24 2017</dt><dd><span class="location">Bocconi, Milan</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>28 Sep 2017</dt><dd><span class="location">Berkeley Theory/Psych and Econ</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>17 Jul 2017</dt><dd><span class="location">Regensburg</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>27 Jun 2017</dt><dd><span class="location">Briq Bonn</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Apr 26 2017</dt><dd><span class="location">University of California San Diego</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Apr 10 2017</dt><dd><span class="location">Arizon State University</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Dec 1 2016</dt><dd><span class="location">Princeton </span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Nov 29 2016</dt><dd><span class="location">Princeton </span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Nov 21 2016</dt><dd><span class="location">Columbia University</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Philipp Strack</dd>
+	<dt>Nov 7 2016</dt><dd><span class="location">Duke University</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Apr 29 2016</dt><dd><span class="location">Oxford</span><br><i>Risk-Taking in Contests - The impact of fund-manager Compensation on Investor Welfare</i> presented by Philipp Strack</dd>
+	<dt>Apr 27 2016</dt><dd><span class="location">Warwick</span><br><i>Risk-Taking in Contests - The impact of fund-manager Compensation on Investor Welfare</i> presented by Philipp Strack</dd>
+	<dt>Apr 26 2016</dt><dd><span class="location">University College London</span><br><i>Risk-Taking in Contests - The impact of fund-manager Compensation on Investor Welfare</i> presented by Philipp Strack</dd>
+	<dt>Apr 25 2016</dt><dd><span class="location">University of Surrey</span><br><i>Risk-Taking in Contests - The impact of fund-manager Compensation on Investor Welfare</i> presented by Philipp Strack</dd>
+	<dt>Apr 20 2016</dt><dd><span class="location">Northwestern University</span><br><i>Risk-Taking in Contests - The impact of fund-manager Compensation on Investor Welfare</i> presented by Philipp Strack</dd>
+	<dt>Jan 23 2016</dt><dd><span class="location">Washington University St. Louis</span><br><i>Competition and Endogenous Risk-Taking in Financial Markets</i> presented by Philipp Strack</dd>
+	<dt>Nov 17 2015</dt><dd><span class="location">University of Chicago</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Oct 26 2015</dt><dd><span class="location">USC</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Oct 26 2015</dt><dd><span class="location">Stanford</span><br><i>Competition and Endogenous Risk-Taking in Financial Markets</i> presented by Philipp Strack</dd>
+	<dt>Oct 16 2015</dt><dd><span class="location">Simons Center Berkeley</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Oct 1 2015</dt><dd><span class="location">Penn State</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Sep 17 2015</dt><dd><span class="location">University of Pittsburgh</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Sep 15 2015</dt><dd><span class="location">UPenn</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Jul 15 2015</dt><dd><span class="location">University of Bonn</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Jun 9 2015</dt><dd><span class="location">University of Jena</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Apr 8 2015</dt><dd><span class="location">Stanford</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Philipp Strack</dd>
+	<dt>Mar 27 2015</dt><dd><span class="location">University of Michigan</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Philipp Strack</dd>
+	<dt>Mar 4 2015</dt><dd><span class="location">Santa Clara University</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Philipp Strack</dd>
+	<dt>Jan 2015</dt><dd><span class="location">AEA Meeting Boston</span><br><i>Until the Bitter End: On Prospect Theory in the Dynamic Context</i> presented by Sebastian Ebert</dd>
+	<dt>Jan 3 2015</dt><dd><span class="location">AEA Meeting Boston</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Nov 18 2014</dt><dd><span class="location">University of Montreal</span><br><i>On the Speed of Social Learning</i> presented by Philipp Strack</dd>
+	<dt>Nov 9 2014</dt><dd><span class="location">INFORMS Annual Meeting 2014, San Francisco</span><br><i>Revenue Maximizing Mechanisms with Strategic Customers and Unknown Demand:
+	Name-Your-Own-Price</i> presented by Philipp Strack</dd>
+	<dt>Oct 7 2014</dt><dd><span class="location">UC Davis</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Philipp Strack</dd>
+	<dt>Sep 30 2014</dt><dd><span class="location">Berkeley Psych and Econ</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Philipp Strack</dd>
+	<dt>Sep 4 2014</dt><dd><span class="location">Berkeley Risk Seminar</span><br><i>Competition and Endogenous Risk-Taking in Financial Markets</i> presented by Philipp Strack</dd>
+	<dt>Sep 4 2014</dt><dd><span class="location">Harvard/MIT Theory Seminar</span><br><i>Stochastic Choice and Optimal Sampling</i> presented by Philipp Strack</dd>
+	<dt>Sep 4 2014</dt><dd><span class="location">Chicago</span><br><i>Stochastic Choice and Optimal Sampling</i> presented by Tomasz Strzalecki</dd>
+	<dt>May 11 2014</dt><dd><span class="location">SITE Meeting 2014, Stanford</span><br><i>Unrealistic Expectations and Misguided Learning</i> presented by Botond Koszegi</dd>
+	<dt>May 10 2014</dt><dd><span class="location">SITE Meeting 2014, Stanford</span><br><i>Stochastic Choice and Optimal Sampling</i> presented by Philipp Strack</dd>
+	<dt>May 10 2014</dt><dd><span class="location">POMS Conference, Altlanta</span><br><i>Dynamic Allocation and Learning with Strategic Arrivals</i> presented by Philipp Strack</dd>
+	<dt>Apr 14 2014</dt><dd><span class="location">MIT Sloan Operations Management Seminar</span><br><i>Dynamic Allocation and Learning with Strategic Arrivals</i> presented by Philipp Strack</dd>
+	<dt>Feb 12 2014</dt><dd><span class="location">Ludwig Maximilians University Munich, Germany</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Paul Viefers</dd>
+	<dt>Jan 17 2014</dt><dd><span class="location">University Laval, Montreal Canada</span><br><i>Too Proud to Stop: Regret in Dynamic Decisions</i> presented by Paul Viefers</dd>
+	<dt>Dez 12 2013</dt><dd><span class="location">University of Bonn</span><br><i>Risktaking and Financial Competition</i> presented by Philipp Strack</dd>
+	<dt>12/04/13</dt><dd><span class="location">Yale University</span><br><i>Risktaking and Financial Competition</i> presented by Philipp Strack</dd>
+	<dt>Nov 11 2013</dt><dd><span class="location">University of Montreal</span><br><i>Risktaking and Financial Competition</i> presented by Philipp Strack</dd>
+	<dt>Oct 23 2013</dt><dd><span class="location">Max Planck Institute, Bonn</span><br><i>Risktaking and Financial Competition</i> presented by Philipp Strack</dd>
+	<dt>Sep 24 2013</dt><dd><span class="location">University of Pennsylvania, Philadelphia</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Sep 23 2013</dt><dd><span class="location">Duke University</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Sep 17 2013</dt><dd><span class="location">University of Toronto, Toronto</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Sep 15 2013</dt><dd><span class="location">University of Texas, Austin</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Aug 29 2013</dt><dd><span class="location">Microsoft Research New England, Boston</span><br><i>Dynamic Revenue Maximization: A Continuous Time Approach</i> presented by Philipp Strack</dd>
+	<dt>Aug 23 2013</dt><dd><span class="location">MIT Applied Theory Summer Camp</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Aug 16 2013</dt><dd><span class="location">Microsoft Research New England, Boston</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Apr 25 2013</dt><dd><span class="location">University of Warwick, Statistics Departement</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Apr 9 2013</dt><dd><span class="location">University of Bielefeld, Germany</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Feb 11 2013</dt><dd><span class="location">Northwestern University, Evanston</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Feb 7 2013</dt><dd><span class="location">University of California, Los Angeles</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Feb 5 2013</dt><dd><span class="location">Columbia University,Business School</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Feb 4 2013</dt><dd><span class="location">Columbia University, Economics Department</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Feb 1 2013</dt><dd><span class="location">University of California, Berkeley</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Jan 30 2013</dt><dd><span class="location">New York University</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Jan 24 2013</dt><dd><span class="location">California Institute of Technology</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Jan 18 2013</dt><dd><span class="location">Harvard University</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Jan 16 2013</dt><dd><span class="location">University College London</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Jan 15 2013</dt><dd><span class="location">University of Warwick</span><br><i>Optimal Stopping with Private Information</i> presented by Philipp Strack</dd>
+	<dt>Dez 3 2012</dt><dd><span class="location">University of Chicago</span><br><i>Dynamic Revenue Maximization a Continuous Time Approach</i> presented by Dirk Bergemann</dd>
+	<dt>Nov 9 2012</dt><dd><span class="location">European Winter Meetings of the Econometric Society 2012, Konstanz</span><br><i>Continuous Time Contests</i> presented by Philipp Strack</dd>
+	<dt>Oct 29 2012</dt><dd><span class="location">University of Cologne</span><br><i>Until the Bitter End: On Prospect Theory in the Dynamic Context</i> presented by Philipp Strack</dd>
+	<dt>Oct 16 2012</dt><dd><span class="location">INFORMS Annual Meeting 2012, Phoenix</span><br><i>Dynamic Revenue Maximization a Continuous Time Approach</i> presented by Philipp Strack</dd>
+	<dt>Oct 9 2012</dt><dd><span class="location">Yale University</span><br><i>Dynamic Implementability for Optimal Stopping</i> presented by Philipp Strack</dd>
+	<dt>Oct 4 2012</dt><dd><span class="location">University of Maastricht</span><br><i>Dynamic Implementability for Optimal Stopping</i> presented by Philipp Strack</dd>
+	<dt>Aug 2012</dt><dd><span class="location">27th Annual Congress of the European Economic Association Malaga</span><br><i>Until the Bitter End: On Prospect Theory in the Dynamic Context</i> presented by Philipp Strack</dd>
+	<dt>Jun 20 2012</dt><dd><span class="location">Fourth Congress of the Game Theory Society 2012 Istanbul</span><br><i>Continuous Time Contests</i> presented by Philipp Strack</dd>
+	<dt>May 23 2012</dt><dd><span class="location">Maastricht University</span><br><i>Continuous Time Contests</i> presented by Christian Seel</dd>
+	<dt>Apr 20 2012</dt><dd><span class="location">Mannheim University</span><br><i>Strategic Experimentation with Private Payoffs</i> presented by Philipp Strack</dd>
+	<dt>Feb 10 2012</dt><dd><span class="location">Berlin Behavioral Economics Workshop</span><br><i>Until the Bitter End: On Prospect Theory in the Dynamic Context</i> presented by Philipp Strack</dd>
+	<dt>Feb 2 2012</dt><dd><span class="location">Finance Seminar, University of Bonn</span><br><i>Until the Bitter End: On Prospect Theory in the Dynamic Context</i> presented by Sebastian Ebert</dd>
+	<dt>Jan 11 2012</dt><dd><span class="location">University of Bonn</span><br><i>How to Sell an Option</i> presented by Philipp Strack</dd>
+	<dt>Sep 9 2011</dt><dd><span class="location">Mannheim University</span><br><i>Continuous Time Contests</i> presented by Christian Seel</dd>
+	<dt>Sep 6 2011</dt><dd><span class="location">Verein fuer Sozialpolitik, Jahrestagung 2011</span><br><i>Gambling in Contests</i> presented by Christian Seel</dd>
+	<dt>July 19 2011</dt><dd><span class="location">Stochastic and Real World Models Conference 2011 (Bielefeld)</span><br><i>Skorokhod Embeddings in Bounded Time</i> presented by Stefan Ankirchner</dd>
+	<dt>July 12 2011</dt><dd><span class="location">International Conference on Game Theory, Stony Brook University New York</span><br><i>Continuous Time Contests</i> presented by Philipp Strack</dd>
+	<dt>June 2011</dt><dd><span class="location">Philipps-University Marburg</span><br><i>Skorokhod Embeddings in Bounded Time</i> presented by Stefan Ankirchner</dd>
+	<dt>April 27 2011</dt><dd><span class="location">Yale University</span><br><i>Continuous Time Contests</i> presented by Philipp Strack</dd>
+	<dt>Feb 24 2011</dt><dd><span class="location">IMPACT-Workshop, Berlin University</span><br><i>Skorokhod Embeddings in Bounded Time</i> presented by Stefan Ankirchner</dd>
+	<dt>Feb 15 2011</dt><dd><span class="location">Yale University</span><br><i>Gambling in Contests</i> presented by Philipp Strack</dd>
+	<dt>Feb 2 2011</dt><dd><span class="location">Maastricht University</span><br><i>Gambling in Contests</i> presented by Christian Seel</dd>
+	<dt>Jan 7 2011</dt><dd><span class="location">AEA Meeting Denver</span><br><i>Strategic Experimentation with Private Payoffs</i> presented by Paul Heidhues</dd>
+	<dt>Nov 2010</dt><dd><span class="location">Brownbag Seminar, University of Cologne</span><br><i>Gambling in Dynamic Contests</i> presented by Christian Seel </dd>
+	<dt>Oct 28 2010</dt><dd><span class="location">Brownbag Seminar, University of Frankfurt</span><br><i>Continuous Time Contests</i> presented by Christian Seel</dd>
+	<dt>Oct 20 2010</dt><dd><span class="location">SFB Conference, University of Bonn</span><br><i>Strategic Experimentation with Private Payoffs</i> presented by Sven Rady </dd>
+	<dt>Oct 10 2010</dt><dd><span class="location">University of Jena</span><br><i>Skorokhod Embeddings in Bounded Time</i> presented by Stefan Ankirchner </dd>
+	<dt>Sep 11 2010</dt><dd><span class="location">Workshop on Stochastic Games, Erice</span><br><i>Gambling in Dynamic Contests</i> presented by Christian Seel</dd>
+	<dt>Aug 17 2010</dt><dd><span class="location">World Congress of the Econometric Society 2010, Shanghai</span><br><i>Gambling in Dynamic Contests</i> presented by Philipp Strack</dd>
+	<dt>May 11 2010</dt><dd><span class="location">Mathematics Department University of Bonn</span><br><i>Gambling in Dynamic Contests</i> presented by Philipp Strack</dd>
+	<dt>Apr 21 2010</dt><dd><span class="location">Economics Department University of Bonn (Microworkshop)</span><br><i>Continuous Time Contests</i> presented by Christian Seel</dd>
+	<dt>Apr 1 2010</dt><dd><span class="location">Yale University</span><br><i>Strategic Experimentation with Private Payoffs</i> presented by Sven Rady</dd>
+	<dt>Mar 15 2010</dt><dd><span class="location">University of California, Berkeley</span><br><i>Strategic Experimentation with Private Payoffs</i> presented by Paul Heidhues</dd>
+	<dt>Mar 19 2010</dt><dd><span class="location">Economics Department University of Barcelona (EDP Jamboree 2010)</span><br><i>Gambling in Dynamic Contests</i> presented by Christian Seel</dd>
+	<dt>Dez 1 2009</dt><dd><span class="location">Economics Department University of Bielefeld</span><br><i>Gambling in Dynamic Contests</i> presented by Christian Seel</dd>
+	<dt>Jul 8 2009</dt><dd><span class="location">Economics Department University of Bonn (Microworkshop)</span><br><i>Gambling in Dynamic Contests</i> presented by Philipp Strack</dd>	
 </dl>
 </div>
 </div>
