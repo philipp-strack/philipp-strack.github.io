@@ -45,13 +45,13 @@ div#main {
 
 div#head {
 	background-image: url(../img/profile.jpeg);
-	background-size: 160px 160px;
+	background-size: 180px 180px;
 	background-repeat: no-repeat;
 	background-position: top left;
 	height: 200px;
 	margin: 0 0 30px 0;
 	padding: 0;
-	padding-left: 161px;
+	padding-left: 200px;
 /*border: 1px solid red;*/
 }
 div#head_shot {
