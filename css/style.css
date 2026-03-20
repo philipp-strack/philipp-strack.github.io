@@ -45,6 +45,7 @@ div#main {
 
 div#head {
 	background-image: url(../img/profile.jpeg);
+	background-size: 160px 160px;
 	background-repeat: no-repeat;
 	background-position: top left;
 	height: 200px;
