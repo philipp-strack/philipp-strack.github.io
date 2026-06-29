@@ -15,13 +15,15 @@ if (argsObj.index == 0)
 else if (argsObj.index == 1)
 	history.pushState(stateObj, "page 2", "?tab=cv");
 else if (argsObj.index == 2)
-	history.pushState(stateObj, "page 2", "?tab=csec");
-else if (argsObj.index == 3)
 	history.pushState(stateObj, "page 2", "?tab=presentations");
+else if (argsObj.index == 3)
+	history.pushState(stateObj, "page 2", "?tab=students");
 else if (argsObj.index == 4)
-	history.pushState(stateObj, "page 2", "?tab=teaching");
+	history.pushState(stateObj, "page 2", "?tab=csec");
+else if (argsObj.index == 5)
+	history.pushState(stateObj, "page 2", "?tab=games");
 else
-	history.pushState(stateObj, "page 2", "?tab=research-statement");
+	history.pushState(stateObj, "page 2", "?tab=research");
 }};
 </script>
 <script type="text/javascript" src="js/tabber.js"></script>
@@ -776,7 +778,7 @@ Former Students (First Placement, Chronological):
 
 <div id="tab-csec" class="tabbertab">
 <h2>CSEC Major and Office Hour</h2>
-<div id="presentation">
+<div id="csec-info">
 <h3>Computer Science and Economics Major</h3>
 <ul>
 <li><a href="http://csec.yale.edu">Official Website of the CSEC major</a>.</li>
@@ -790,7 +792,7 @@ My office hours are <b>Wednesdays from 1:15-2:15</b>. Please let me know in adva
 </div>
 </div>
 
-<div id="tab-csec" class="tabbertab">
+<div id="tab-games" class="tabbertab">
 <h2>Games</h2>
 <div id="games">
 <h3>Oligopoly</h3>
@@ -810,8 +812,10 @@ vars[key] = value;
 return vars;
 }
 /*This function checks if a specific tab is selected*/
-document.getElementById("tab-"+getUrlVars()["tab"]).className = "tabbertab tabbertabdefault";
+var selectedTab = document.getElementById("tab-"+getUrlVars()["tab"]);
+if (selectedTab) selectedTab.className = "tabbertab tabbertabdefault";
 </script>
+</div>
 </div>
 </div>
 </body>
